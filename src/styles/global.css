@@ -12,6 +12,22 @@
 	--timestamps: #9b9b9b;
 	--light-gray: #666;
 	--gray: #555;
+	--headers: #000;
+}
+
+:root.dark {
+	--accent: #ff6cd3;
+	--accent-dark: #e4339a;
+	--nav-bg: #311d2977;
+	--white-bg: #212121;
+	--text-color: #b6b6b6;
+	--bg-color: #181818;
+	--white-accent: #333333;
+	--hover-color: #2b2b2b;
+	--timestamps: #696969;
+	--light-gray: #bbbbbb;
+	--gray: #cccccc;
+	--headers: #fff;
 }
 
 ::selection {
@@ -300,6 +316,22 @@ header {
   .friend-button img:hover {
 	border-color: var(--accent-dark);
 	transition: 0.2s ease;
+  }
+
+  footer {
+	text-align: center;
+	padding-top: 10px;
+	color: var(--text-color);
+	padding-bottom: 10px;
+  }
+
+  footer a {
+	text-decoration: none;
+	color: var(--accent);
+  }
+
+  .content-head {
+	color: var(--headers);
   }
 
   /* MOBILE SHIT */
