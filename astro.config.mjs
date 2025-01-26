@@ -5,6 +5,14 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://example.com',
+	site: 'https://leteeno.net',
 	integrations: [mdx(), sitemap()],
+	// i18n: {
+	// 	locales: ["de", "en"],
+	// 	defaultLocale: "en",
+	// 	routing: {
+	// 		prefixDefaultLocale: true
+	// 	}
+	//   }
 });
+
