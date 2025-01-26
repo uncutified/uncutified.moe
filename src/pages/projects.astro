@@ -1,0 +1,64 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Summary from '../components/Summary.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<div class="split-screen">
+			<Summary />
+			<div class="content">
+                <div class="content-column">
+                    <div class="content-soon">
+	
+                        <div><h2 class="content-head">My projects c.c</h2>
+                        <p>There are <i>some</i> projects I work on. If you want to find out more, you can click on it!</p>
+                        <p>You can find more stuff (like source codes) on my <a href="https://github.com/leteeno">GitHub</a>!</p>
+                    </div>
+    
+                        <img src="https://media.discordapp.net/stickers/1039992459209490513.png?size=160&passthrough=true" alt="">
+                </div>
+
+                <hr class="project-div">
+
+                <div class="content-project">
+                    <h2 class="content-head"><a href="#">🤖 Kenon</a></h2>
+                    <p>A discord bot I've started to code in early 2023s. It features economy, moderation, some utilties. Since I'm not really 
+                        motivated at the moment, I cant really say when it's finished.
+                    </p>
+                </div>
+                <div class="content-project">
+                    <h2 class="content-head"><a href="https://buildtown.net">🏗️ Buildtown.net</a></h2>
+                    <p>A german minecraft citybuild network I run with one of my friends. Uses custom plugins and is free to play. Check it out if
+                         you want :D
+                    </p>
+                </div>
+                <div class="content-project">
+                    <h2 class="content-head"><a href="https://minehost.xyz">💻 Minehost.xyz</a></h2>
+                    <p>Offering powerful minecraft server hosting for everyone. Entirely for free without any flaws.
+                    </p>
+                </div>
+                <div class="content-project">
+                    <h2 class="content-head"><a href="#">🚂 EiB-Ausbildung.de</a></h2>
+                    <p>Upcoming Website which will be made to support german trainee train drivers on their apprenticeship. It will feature stuff like signals 
+                        and more essential stuff.
+                    </p>
+                </div>
+                
+                </div>
+                </div>
+                
+		  </div>
+		  
+
+		<Footer />
+	</body>
+</html>

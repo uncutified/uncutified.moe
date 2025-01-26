@@ -18,7 +18,7 @@
 :root.dark {
 	--accent: #ff6cd3;
 	--accent-dark: #e4339a;
-	--nav-bg: #311d2977;
+	--nav-bg: #33232c9f;
 	--white-bg: #212121;
 	--text-color: #b6b6b6;
 	--bg-color: #181818;
@@ -55,6 +55,8 @@ header {
 	max-width: 65%;
 	margin: 0 auto;
 	padding: 10px 0;
+	position: sticky;
+	top: 0;
   }
   
   
@@ -202,13 +204,36 @@ header {
   }
   
   .content {
+	display: flex;
+	flex-direction: column;
+  }
+
+  .content-column {
+	gap: 10px;
+	display: flex;
+	flex-direction: column;
+  }
+
+  .content-about {
 	flex: 1;
-	padding: 20px;
+	padding: 5px 20px;
 	background-color: var(--white-bg);
 	border-radius: 10px;
 	border-color: var(--white-accent);
 	border-style: solid;
 	border-width: 1px;
+  }
+
+
+  .content-project {
+	flex: 1;
+	padding: 5px 20px;
+	background-color: var(--white-bg);
+	border-radius: 10px;
+	border-color: var(--white-accent);
+	border-style: solid;
+	border-width: 1px;
+	
   }
 
   .content-soon {
@@ -223,12 +248,18 @@ header {
 	justify-content: space-between;
   }
 
-  .content-soon p,h2 {
+  .content-soon h2 {
 	margin: 0;
+  }
+
+  .content-soon p {
+	margin: 0;
+	color: var(--text-color);
   }
 
   .content-soon img {
 	width: 75px;
+	height: 75px;
   }
 
   .content-box {
@@ -245,7 +276,9 @@ header {
 	margin-bottom: 10px;
   }
 
-  .content p {
+  .content p,
+  .content-about p,
+  .content-project p {
 	color: var(--gray);
 	line-height: 1.5rem;
   }
@@ -295,6 +328,20 @@ header {
 	color: var(--accent);
   }
 
+  .content-project a,
+  .content-soon a {
+	color: var(--accent);
+	text-decoration: none;
+	transition: 0.2s ease;
+  }
+
+  .content-project a:hover,
+  .content-soon a:hover {
+	color: var(--accent-dark);
+	text-decoration: none;
+	transition: 0.2s ease;
+  }
+
   .friend-buttons {
 	display: flex;
 	gap: 5px;
@@ -334,6 +381,7 @@ header {
 	color: var(--headers);
   }
 
+
   /* MOBILE SHIT */
 
 @media (max-width: 1100px) {
@@ -350,5 +398,6 @@ header {
 	.summary {
 		padding-bottom: 10px;
 	}
+
 	
 }
