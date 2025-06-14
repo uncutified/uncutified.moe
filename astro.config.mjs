@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://leteeno.net',
+	site: 'https://uncutified.moe',
 	integrations: [mdx(), sitemap()],
 	// i18n: {
 	// 	locales: ["de", "en"],
