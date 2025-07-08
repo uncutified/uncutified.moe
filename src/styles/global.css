@@ -401,3 +401,73 @@ header {
 
 	
 }
+
+
+/* BLOG CSS */
+
+/* BLOG CSS */
+
+.blog-list {
+  flex: 1;
+}
+
+.blog-list ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.post-item {
+  width: 100%;
+  background-color: var(--white-bg);
+  border: 1px solid var(--white-accent);
+  border-radius: 12px;
+  padding: 0; /* kein äußeres Padding */
+  transition: background 0.2s;
+}
+
+.post-item:hover {
+  background-color: var(--white);
+}
+
+.post-item a {
+text-decoration: none;
+}
+
+.post-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 20px; /* Padding wandert hierher */
+}
+
+.post-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-text .title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--headers);
+}
+
+.post-text .date {
+  font-size: 0.95rem;
+  color: var(--text-color);
+  margin-top: 6px;
+}
+
+.post-image {
+  width: 160px;
+  height: 90px;
+  border-radius: 10px;
+  object-fit: cover;
+}
